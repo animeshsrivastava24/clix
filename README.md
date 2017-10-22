@@ -3,7 +3,7 @@
 
 # clix
 
-An easy to use clipboard manager made using tkinter.
+An easy to use clipboard manager made using Tkinter.
 
 ![](https://media.giphy.com/media/l0IymVaUaR5xGRQHK/giphy.gif)
 
@@ -13,30 +13,30 @@ An easy to use clipboard manager made using tkinter.
 
 - To install clix, simply,
 
-	```
-	$ pip install clix
-	```
+    ```
+    $ pip install clix
+    ```
 
 - If you get `ImportError` for Xlib module, install it using this command:
-	```
-	$ sudo apt-get install python-xlib
-	```
+    ```
+    $ sudo apt-get install python-xlib
+    ```
 
 ## Usage
 
 - To run clix, open terminal and run this command:
 
-	```
-	$ clix
-	```
-	if error shown try:
-	```
-	$ sudo clix
-	```
-	On Mac OSX, one of the following must be true:
+    ```
+    $ clix
+    ```
+    if error shown try:
+    ```
+    $ sudo clix
+    ```
+    On Mac OSX, one of the following must be true:
 
-		-The process must run as root.
-		-Your application must be white listed under Enable access for assistive devices. Note that this might require that you package your  	application, since otherwise the entire Python installation must be white listed.
+        -The process must run as root.
+        -Your application must be whitelisted under Enable access for assistive devices. Note that this might require that you package your application, since otherwise, the entire Python installation must be whitelisted.
 
   **Note:** Leave this terminal open as long as you want to use **clix**.
   
@@ -59,31 +59,31 @@ An easy to use clipboard manager made using tkinter.
   Initially, all clip frames are empty.
 
 - Now, as you copy any text, (using **Ctrl** + **c** keys), the text is saved to 
-  topmost frame of clix clipboard.
+  the topmost frame of clix clipboard.
 
-- Whenever you want to paste any clip, just open clix GUI (usin **Ctrl** + 
-  **space** keys) and click on **clip it** button to copy clip text to main clipboard.
+- Whenever you want to paste any clip, just open clix GUI (using **Ctrl** + 
+  **space** keys) and click on **clip it** button to copy clip text to the main clipboard.
 
   Now, simply pressing **Ctrl** + **v** keys will paste the desired clip text!
 
 - **CLI usage to configure keys**
-	```
-	$ clix [-h] [-s SET_KEYBINDING] [-a] [-c]
-	```
+    ```
+    $ clix [-h] [-s SET_KEYBINDING] [-a] [-c]
+    ```
 
-	You can always use `$ clix -h` command to open this help message:
-	
-	```
-	optional arguments:
-	  -h, --help            show this help message and exit
-	  -s SET_KEYBINDING, --set-keybinding SET_KEYBINDING
-	                        Set alternate key binding. Default is LCTRL+SPACE
-	                        Format :- <KEY1>+<KEY2>. Ex:- RCTRL+RALT. To see
-	                        availble key bindings use 'clix -a' option
-	  -a, --available-keybindings
-	                        Show available key bindings
-	  -c, --show-current-keybinding
-	```
+    You can always use `$ clix -h` command to open this help message:
+    
+    ```
+    optional arguments:
+      -h, --help            show this help message and exit
+      -s SET_KEYBINDING, --set-keybinding SET_KEYBINDING
+                            Set alternate key binding. Default is LCTRL+SPACE
+                            Format :- <KEY1>+<KEY2>. Ex:- RCTRL+RALT. To see
+                            availble key bindings use 'clix -a' option
+      -a, --available-keybindings
+                            Show available key bindings
+      -c, --show-current-keybinding
+    ```
 
 ## TODO
 
@@ -102,35 +102,35 @@ An easy to use clipboard manager made using tkinter.
 
 - Clone the repository
 
-	```
-	$ git clone http://github.com/nikhilkumarsingh/clix
-	```
+    ```
+    $ git clone http://github.com/nikhilkumarsingh/clix
+    ```
 
 - Install dependencies
-	
-	```
-	$ pip install -r requirements.txt
-	```
+    
+    ```
+    $ pip install -r requirements.txt
+    ```
 
 - Remove the `.` prefix from `.pyxhook` and `.gui` for the following 
   imports in **clix.py**, so it changes from:
-	```python
-	from .pyxhook import HookManager
-	from .gui import clipboard
-	```
-	to:
-	```python
-	from pyxhook import HookManager
-	from gui import clipboard
-	```
+    ```python
+    from .pyxhook import HookManager
+    from .gui import clipboard
+    ```
+    to:
+    ```python
+    from pyxhook import HookManager
+    from gui import clipboard
+    ```
 
 - To test local version of clix:
-	```
-	$ pip install -U .
-	```
-	OR :
-	```
-	$ pip install -e <project dir.> .
-	```
+    ```
+    $ pip install -U .
+    ```
+    OR :
+    ```
+    $ pip install -e <project dir.> .
+    ```
 
 Finally, do report bugs and help us make **clix** more and more productive!
